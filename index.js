@@ -82,3 +82,20 @@ function getRandomQuote(currentQuote, quotesArr) {
     return quotesArr[getRandomIndex(quotesArr.length)];
   }
 }
+
+// Increase font size function
+document.getElementById("increase").addEventListener("click", function() {
+    let currentFontSize = parseFloat(window.getComputedStyle(document.getElementById("quote")).fontSize);
+    let newFontSize = currentFontSize + 2;
+    document.getElementById("quote").style.fontSize = newFontSize + "px"; 
+  });
+  
+// Decrease font size function
+document.getElementById("decrease").addEventListener("click", function() {
+    let currentFontSize = parseFloat(window.getComputedStyle(document.getElementById("quote")).fontSize);
+    let newFontSize = currentFontSize - 2;
+    if (newFontSize >= 8) { 
+        document.getElementById("quote").style.fontSize = newFontSize + "px";
+    }
+  });
+  
