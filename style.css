@@ -105,3 +105,43 @@ body {
     margin: 0 auto;
     text-align: center;
   }
+
+/* Dark mode */
+.dark-mode {
+    background-color: #222;
+    color: #fff; 
+}
+
+.dark-mode .card {
+    background-color: #333; 
+}
+
+.dark-mode .card-footer button {
+    background-color: #333;
+    color: #fff; 
+}
+
+.dark-mode .card-footer button {
+    background-color: #333; 
+    color: #fff; 
+}
+
+.dark-mode .select-btn{
+    background-color: #535151; 
+    color: #fff;
+}
+
+.dark-mode .category-options {
+    background-color: #333; 
+}
+
+.dark-mode .option {
+    background-color: #444; 
+}
+
+.dark-mode #quote {
+    color: #fff; 
+}
+
+
+ 

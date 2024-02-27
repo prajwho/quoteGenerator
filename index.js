@@ -99,3 +99,10 @@ document.getElementById("decrease").addEventListener("click", function() {
     }
   });
   
+//dark mode
+
+function darkMode() {
+    let element = document.body;
+    element.classList.toggle("dark-mode");
+  }
+  
