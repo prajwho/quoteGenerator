@@ -8,9 +8,17 @@ const categories = [
   {
     name: "Inspirational",
     quotes: [
-      "The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle.",
-      "Believe you can and you're halfway there.",
-      "The future belongs to those who believe in the beauty of their dreams.",
+        "The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle.",
+        "Believe you can and you're halfway there.",
+        "The future belongs to those who believe in the beauty of their dreams.",
+        "It takes courage to grow up and become who you really are.",
+        "Your self-worth is determined by you. You don't have to depend on someone telling you who you are.",
+        "Nothing is impossible. The word itself says 'I'm possible!'",
+         "Keep your face always toward the sunshine, and shadows will fall behind you." ,
+        "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. You're on your own. And you know what you know. And you are the guy who'll decide where to go." ,
+        "Attitude is a little thing that makes a big difference." ,
+        "To bring about change, you must not be afraid to take the first step. We will fail when we fail to try."
+  
     ],
   },
   {
@@ -19,13 +27,20 @@ const categories = [
       "The only way to achieve the impossible is to believe it is possible.",
       "It always seems impossible until it is done.",
       "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+      "We cannot solve problems with the kind of thinking we employed when we came up with them.",
+      "Learn as if you will live forever, live like you will die tomorrow.",
+      "Stay away from those people who try to disparage your ambitions. Small minds will always do that, but great minds will give you a feeling that you can become great too.",
+      "When you give joy to other people, you get more joy in return. You should give a good thought to the happiness that you can give out.",
+      "When you change your thoughts, remember to also change your world.",
+      "It is only when we take chances that our lives improve. The initial and the most difficult risk we need to take is to become honest.",
+      "Nature has given us all the pieces required to achieve exceptional wellness and health, but has left it to us to put these pieces together."
     ],
   },
 ];
 
 //Provide default value for select button and quote
 select_button_text.innerHTML = categories[0].name;
-quoteText.innerHTML = categories[0].quotes[0];
+quoteText.innerHTML = categories[0].quotes[Math.floor(Math.random() * 10)];
 
 selectButton.addEventListener("click", () =>
   categoryOptions.classList.toggle("active")
