@@ -51,3 +51,57 @@ body {
     cursor: pointer;
     font-size: 16px;
   }
+  
+/* Select Menu Styles */
+.select-menu {
+    width: 90%;
+    max-width: 100%;
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .select-menu .select-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00F2F2;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .select-menu .category-options {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%; 
+    padding: 10px;
+    border-radius: 8px;
+    background: #00F2F2;
+    display: none;
+    z-index: 1;
+  }
+  
+  .select-menu.active .category-options {
+    display: block;
+  }
+  
+  .category-options .option {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .category-options .option:hover {
+    background: #bdbbb9;
+  }
+  
+  .option .option-text {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+  }
