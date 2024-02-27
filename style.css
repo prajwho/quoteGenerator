@@ -1,0 +1,147 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 10px;
+    background-color: #F6E8EA;
+  }
+  
+/* Card Styles */
+.card {
+    background-color: #EF626C;
+    border-radius: 30px;
+    padding: 30px;
+    max-width: 90%;
+    width: 100%;
+  }
+  
+  .card-header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .card-body {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #quote {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  ;
+    color: #000000;
+    font-size: 20px;
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .card-footer button {
+    background-color: #00F2F2;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+/* Select Menu Styles */
+.select-menu {
+    width: 90%;
+    max-width: 100%;
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .select-menu .select-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00F2F2;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .select-menu .category-options {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%; 
+    padding: 10px;
+    border-radius: 8px;
+    background: #00F2F2;
+    display: none;
+    z-index: 1;
+  }
+  
+  .select-menu.active .category-options {
+    display: block;
+  }
+  
+  .category-options .option {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .category-options .option:hover {
+    background: #bdbbb9;
+  }
+  
+  .option .option-text {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+/* Dark mode */
+.dark-mode {
+    background-color: #222;
+    color: #fff; 
+}
+
+.dark-mode .card {
+    background-color: #333; 
+}
+
+.dark-mode .card-footer button {
+    background-color: #333;
+    color: #fff; 
+}
+
+.dark-mode .card-footer button {
+    background-color: #333; 
+    color: #fff; 
+}
+
+.dark-mode .select-btn{
+    background-color: #535151; 
+    color: #fff;
+}
+
+.dark-mode .category-options {
+    background-color: #333; 
+}
+
+.dark-mode .option {
+    background-color: #444; 
+}
+
+.dark-mode #quote {
+    color: #fff; 
+}
+
+
+ 
